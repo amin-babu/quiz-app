@@ -6,6 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Quiz App</title>
   <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -25,6 +28,69 @@
       <button>Start Quiz</button>
     </div>
   </div>
+
+  <div class="rulse_box">
+    <h3 class="rulse_title">Some rules of this quiz</h3>
+    <div class="rules_list">
+      <ol>
+        <li>You will have only <span style="color: #0d77e7;">15 seconds</span> per each question.</li>
+        <li>Once you select your answer, it can't be undone.</li>
+        <li>You can't select any option once time goes off.</li>
+        <li> You can't exit from the Quiz while you're playing.</li>
+        <li>You'll get points on the basis of your correct answers.</li>
+      </ol>
+    </div>
+    <div class="buttons">
+      <button class="exit_button">Exit Quiz</button>
+      <button class="continue_button">Continue</button>
+    </div>
+  </div>
+
+  <div class="question">
+    <header class="question_header">
+      <h3 class="title">Start Exam</h3>
+      <div class="time_count">
+        <div class="time_left">Time Off</div>
+        <div class="time_right">15</div>
+      </div>
+      <div class="timeline"></div>
+    </header>
+
+    <section class="question_section">
+      <h3><span>What does HTML stand for?</span></h3>
+      <ol class="my_options">
+
+        <li class="option">
+          <span>Hyper Text Model Language</span>
+          <i class="fa-solid fa-circle-xmark"></i>
+        </li>
+
+        <li class="option">
+          <span>Hyper Tool Markup Language</span>
+          <i class="fa-solid fa-circle-xmark"></i>
+        </li>
+
+        <li class="option">
+          <span>Hyper Text Markup Language</span>
+          <i class="fa-solid fa-circle-check"></i>
+        </li>
+
+        <li class="option">
+          <span>Hyper Tool Multiple Language</span>
+          <i class="fa-solid fa-circle-xmark"></i>
+        </li>
+
+      </ol>
+    </section>
+
+    <footer>
+      <div class="total_question">
+        <p>1 of 5 Questions</p>
+      </div>
+      <button class="next_btn">Next Question</button>
+    </footer>
+  </div>
+
   <script src="./script.js"></script>
 </body>
 

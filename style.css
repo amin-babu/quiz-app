@@ -22,6 +22,7 @@ body {
   box-shadow: 0px 10px 50px rgb(0 0 0 / 10%);
   border: 1px solid rgb(173, 172, 172);
   border-radius: 8px;
+  display: none;
 }
 
 .img img {
@@ -36,29 +37,87 @@ body {
   margin: 12px 0;
 }
 
-.texts,
-.my_btn {
+.texts {
   padding: 0 18px;
 }
 
 .my_btn {
-  padding-bottom: 18px;
+  /* padding-bottom: 18px; */
   display: flex;
   justify-content: flex-end;
 }
 
-.my_btn button {
+.my_btn button,
+.buttons .continue_button,
+.buttons .exit_button {
   font-size: 16px;
   font-weight: 600;
   background-color: #382bf1;
   color: #fff;
   border: none;
-  padding: 8px 16px;
+  padding: 4px 12px;
   border-radius: 5px;
   cursor: pointer;
   transition: 0.3s;
 }
 
-.my_btn button:hover {
+.my_btn button:hover,
+.buttons .continue_button:hover {
   background-color: #564af7;
+}
+
+.rulse_box {
+  /* height: 580px; */
+  width: 320px;
+  background-color: #fff;
+  box-shadow: 0px 10px 50px rgb(0 0 0 / 10%);
+  border: 1px solid rgb(173, 172, 172);
+  border-radius: 8px;
+  display: none;
+}
+
+.rulse_box h3 {
+  padding: 18px;
+}
+
+.rules_list {
+  padding: 0 18px 8px;
+}
+
+.rules_list ol {
+  /* list-style-position: inside; */
+  font-size: 14px;
+  padding-left: 18px;
+}
+
+.rules_list ol li {
+  margin-bottom: 10px;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.buttons .exit_button {
+  background-color: rgb(241, 51, 51);
+  border-radius: 0;
+  padding-top: 6px;
+  padding-right: 13px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 7px;
+}
+
+.buttons .continue_button,
+.my_btn button {
+  border-radius: 0;
+  padding-top: 6px;
+  padding-left: 13px;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 7px;
+}
+
+.buttons .exit_button:hover {
+  background-color: rgba(241, 51, 51, 0.808);
 }
